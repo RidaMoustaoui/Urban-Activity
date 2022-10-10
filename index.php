@@ -31,7 +31,7 @@
     <header class="header_section">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="index.php">
             <img src="images/logo.png" alt="" />
           </a>
           <div class="navbar-collapse" id="">
@@ -63,7 +63,7 @@
             </div>
             <div id="myNav" class="overlay">
               <div class="overlay-content">
-                <a href="index.html">Accueil</a>
+                <a href="index.php">Accueil</a>
                 <a href="house.html">Activités</a>
                 <a href="about.html">À propos</a>
                 <a href="price.html">JSP QUOI METTRE</a>
