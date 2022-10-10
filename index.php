@@ -173,19 +173,30 @@
         </p>
       </div>
       <div class="sale_container">
-        <div class="box">
-          <div class="img-box">
-            <img src="images/s-1.jpg" alt="">
+
+        <?php
+          for($i=1;$i>=6;$i++)
+          {
+            echo 
+            '
+            <div class="box">
+            <div class="img-box">
+              <img src="images/s-1.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h6>
+                Activité test
+              </h6>
+              <p>
+                Description de l activité.
+              </p>
+            </div>
           </div>
-          <div class="detail-box">
-            <h6>
-              Activité test
-            </h6>
-            <p>
-              Description de l'activité.
-            </p>
-          </div>
-        </div>
+            ';
+          }
+
+        ?>
+
         <div class="box">
           <div class="img-box">
             <img src="images/s-2.jpg" alt="">
