@@ -181,7 +181,7 @@
             echo '
             <div class="box">
             <div class="img-box">
-              <img src="images/s-1.jpg" alt="">
+              <img src="images/s-'.$i.'.jpg" alt="">
             </div>
             <div class="detail-box">
               <h6>
