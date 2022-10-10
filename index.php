@@ -83,7 +83,7 @@
             <div class="detail-box">
               <h1>
                 <span> Urban</span> <br>
-                Activity <br>
+                Activities <br>
               </h1>
               <p>
                 Découvrez les activités de votre entreprise.
