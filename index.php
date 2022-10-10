@@ -188,7 +188,7 @@
                 Activité test
               </h6>
               <p>
-                Description de l activité.
+                Description de l\'activité.
               </p>
             </div>
           </div>';
