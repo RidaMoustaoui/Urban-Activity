@@ -173,12 +173,12 @@
         </p>
       </div>
       <div class="sale_container">
-
+      
         <?php
-          for($i=1;$i>=6;$i++)
+          $i=1;
+          for($i;$i<=6;$i++)
           {
-            echo 
-            '
+            echo '
             <div class="box">
             <div class="img-box">
               <img src="images/s-1.jpg" alt="">
@@ -191,78 +191,10 @@
                 Description de l activité.
               </p>
             </div>
-          </div>
-            ';
+          </div>';
           }
-
         ?>
 
-        <div class="box">
-          <div class="img-box">
-            <img src="images/s-2.jpg" alt="">
-          </div>
-          <div class="detail-box">
-            <h6>
-              apertments house
-            </h6>
-            <p>
-              There are many variations of passages of Lorem Ipsum available, but
-            </p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="img-box">
-            <img src="images/s-3.jpg" alt="">
-          </div>
-          <div class="detail-box">
-            <h6>
-              apertments house
-            </h6>
-            <p>
-              There are many variations of passages of Lorem Ipsum available, but
-            </p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="img-box">
-            <img src="images/s-4.jpg" alt="">
-          </div>
-          <div class="detail-box">
-            <h6>
-              apertments house
-            </h6>
-            <p>
-              There are many variations of passages of Lorem Ipsum available, but
-            </p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="img-box">
-            <img src="images/s-5.jpg" alt="">
-          </div>
-          <div class="detail-box">
-            <h6>
-              apertments house
-            </h6>
-            <p>
-              There are many variations of passages of Lorem Ipsum available, but
-            </p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="img-box">
-            <img src="images/s-6.jpg" alt="">
-          </div>
-          <div class="detail-box">
-            <h6>
-              apertments house
-            </h6>
-            <p>
-              There are many variations of passages of Lorem Ipsum available, but
-            </p>
-          </div>
-        </div>
-      </div>
       <div class="btn-box">
         <a href="">
           Toutes les activités
