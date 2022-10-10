@@ -64,8 +64,8 @@
             <div id="myNav" class="overlay">
               <div class="overlay-content">
                 <a href="index.html">Accueil</a>
-                <a href="about.html">À propos</a>
                 <a href="house.html">Activités</a>
+                <a href="about.html">À propos</a>
                 <a href="price.html">JSP QUOI METTRE</a>
                 <a href="contact.html">Contactez Nous</a>
               </div>
@@ -174,6 +174,7 @@
       </div>
       <div class="sale_container">
       
+        <!-- Affichier des activités dynamiquement -->
         <?php
           $i=1;
           for($i;$i<=6;$i++)
