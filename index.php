@@ -169,7 +169,7 @@
           Découvrez les activités du moment.
         </h2>
         <p>
-          Vous pouvez participer à plein d'activités.
+          Voici les dernières activités proposés par votre entreprise.
         </p>
       </div>
       <div class="sale_container">
