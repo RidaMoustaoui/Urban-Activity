@@ -185,7 +185,7 @@
             </div>
             <div class="detail-box">
               <h6>
-                Activité test
+                Activité test '.$i.'
               </h6>
               <p>
                 Description de l\'activité.
