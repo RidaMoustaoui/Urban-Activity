@@ -423,7 +423,7 @@
             <div class="carousel-item">
               <div class="box">
                 <div class="img-box">
-                  <img src="images/tête.jpg" alt="Rida" width="100" height="143">>
+                  <img src="images/tête.jpg" alt="Rida" width="100" height="143">
                 </div>
                 <div class="detail-box">
                   <h5>
