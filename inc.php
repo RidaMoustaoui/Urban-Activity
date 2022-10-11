@@ -24,11 +24,6 @@
 
 <?php
   session_start();
-  
-  if(isset($_SESSION['Mail']))
-  {
-    echo $_SESSION['Mail'];
-  }
 ?>
 
 <body>
@@ -44,7 +39,8 @@
             <ul class="navbar-nav justify-content-between ">
               <div class="User_option">
                 <?php
-                
+                    if(!isset($_SESSION['Mail']))
+                    {
                     echo '
                     <li class="">
                   <a class="mr-4" href="login.php">
@@ -55,6 +51,20 @@
                   </a>
                 </li>
                     ';
+                    }
+                    else
+                    {
+                      echo '
+                    <li class="">
+                  <a class="mr-4" href="">
+                    Bonjour '. $_SESSION['Mail'].'
+                  </a>
+                  <a class="" href="">
+                    Se déconnecter
+                  </a>
+                </li>
+                    ';
+                    }
                 
                 ?>
               </div>
