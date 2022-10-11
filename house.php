@@ -19,10 +19,7 @@
       </div>
       <div class="sale_container">
         
-      <button class="like__btn">
-   <span id="icon"><i class="far fa-thumbs-up"></i></span>
-   <span id="count">0</span> Like
-</button>
+      
   
         <!-- Affichier des activités dynamiquement -->
         <?php
