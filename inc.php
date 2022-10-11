@@ -34,14 +34,35 @@
           <div class="navbar-collapse" id="">
             <ul class="navbar-nav justify-content-between ">
               <div class="User_option">
-                <li class="">
+                <?php
+                if($_SESSION['Mail']<>"")
+                {
+                    echo '
+                    <li class="">
+                  <a class="mr-4" href="login.php">
+                    X
+                  </a>
+                  <a class="" href="signup.php">
+                    S\'inscrire
+                  </a>
+                </li>
+                    ';
+                }
+                else
+                {
+                    echo '
+                    <li class="">
                   <a class="mr-4" href="login.php">
                     Se connecter
                   </a>
                   <a class="" href="signup.php">
-                    S'inscrire
+                    S\'inscrire
                   </a>
                 </li>
+                    ';
+                }
+                
+                ?>
               </div>
             </ul>
 
