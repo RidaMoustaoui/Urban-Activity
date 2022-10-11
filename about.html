@@ -89,14 +89,14 @@
       <div class="row">
         <div class="col-md-6">
           <div class="img-box">
-            <img src="images/about-img.jpg" alt="">
+            <img src="images/happyness.jpg" alt="">
           </div>
         </div>
         <div class="col-md-6">
           <div class="detail-box">
             <div class="heading_container">
               <h2>
-                About Our Apartment
+                Bien être des salariées !
               </h2>
             </div>
             <p>
@@ -104,9 +104,6 @@
               in
               some form, by injected humour, or randomised words
             </p>
-            <a href="">
-              Read More
-            </a>
           </div>
         </div>
       </div>
