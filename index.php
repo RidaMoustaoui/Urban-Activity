@@ -114,7 +114,7 @@
 
   <!-- price section -->
 
-  <section class="price_section layout_padding-bottom">
+   <!--<section class="price_section layout_padding-bottom">
     <div class="container">
       <div class="heading_container">
         <h2>
@@ -253,12 +253,12 @@
         </div>
       </div>
     </div>
-  </section>
+  </section>-->
   <!-- end price section -->
 
   <!-- deal section -->
 
-  <section class="deal_section layout_padding-bottom">
+  <!--<section class="deal_section layout_padding-bottom">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
@@ -290,13 +290,13 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- end deal section -->
 
 
   <!-- us section -->
-  <section class="us_section layout_padding2">
+    <!--<section class="us_section layout_padding2">
 
     <div class="container">
       <div class="heading_container">
@@ -372,7 +372,7 @@
         </a>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- end us section -->
 
@@ -382,7 +382,7 @@
     <div class="container-fluid">
       <div class="heading_container">
         <h2>
-          What is Says Our Customer
+          L'équipe
         </h2>
       </div>
       <div class="client_container">
@@ -391,17 +391,15 @@
             <div class="carousel-item active">
               <div class="box">
                 <div class="img-box">
-                  <img src="images/client.jpg" alt="">
+                  <img  alt = "Abdel" src="images/abdel.png" width="100" height="143">
                 </div>
                 <div class="detail-box">
                   <h5>
-                    <span>Majority</span>
+                    <span>Abdel Rady</span>
                     <hr>
                   </h5>
                   <p>
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                    alteration
-                    in some form, by injected humour, or randomised words which don't look even slightly believable.
+                    Developpeur 
                   </p>
                 </div>
               </div>
@@ -409,17 +407,15 @@
             <div class="carousel-item">
               <div class="box">
                 <div class="img-box">
-                  <img src="images/client.jpg" alt="">
+                  <img src="images/salman.jpg" alt="Salman"  width="100" height="143">
                 </div>
                 <div class="detail-box">
                   <h5>
-                    <span>Majority</span>
+                    <span>Salman Khan</span>
                     <hr>
                   </h5>
                   <p>
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                    alteration
-                    in some form, by injected humour, or randomised words which don't look even slightly believable.
+                   Developpeur
                   </p>
                 </div>
               </div>
@@ -427,17 +423,15 @@
             <div class="carousel-item">
               <div class="box">
                 <div class="img-box">
-                  <img src="images/client.jpg" alt="">
+                  <img src="images/tête.jpg" alt="Rida" width="100" height="143">>
                 </div>
                 <div class="detail-box">
                   <h5>
-                    <span>Majority</span>
+                    <span>Rida Moustaoui</span>
                     <hr>
                   </h5>
                   <p>
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                    alteration
-                    in some form, by injected humour, or randomised words which don't look even slightly believable.
+                    Developpeur
                   </p>
                 </div>
               </div>

@@ -68,7 +68,7 @@
                 <a href="about.html">ABOUT</a>
                 <a href="house.html">HOUSE</a>
                 <a href="price.html">PRICING</a>
-                <a href="contact.html">CONTACT US</a>
+                <a href="contact.php">CONTACT US</a>
               </div>
             </div>
           </div>
