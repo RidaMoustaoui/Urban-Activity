@@ -8,17 +8,23 @@
   <!-- find section -->
   <section class="find_section ">
     <div class="container">
-      <form action="">
+      <form action="verif_signup.php" method="POST">
         <div class=" form-row">
           <div class="col-md-5">
-            <input type="text" class="form-control" placeholder="Saisir une catégorie">
+            <input name="Mail" id="Mail" type="text" class="form-control" placeholder="Mail">
           </div>
           <div class="col-md-5">
-            <input type="text" class="form-control" placeholder="Lieu ">
+            <input name="Mdp" id="Mdp" type="text" class="form-control" placeholder="Mot de passe">
+          </div>
+          <div class="col-md-5">
+            <input name="Nom" id="Nom" type="text" class="form-control" placeholder="NOM">
+          </div>
+          <div class="col-md-5">
+            <input name="Prenom" id="Prenom" type="text" class="form-control" placeholder="Prénom">
           </div>
           <div class="col-md-2">
             <button type="submit" class="">
-              Rechercher
+              S'inscrire
             </button>
           </div>
         </div>
