@@ -8,13 +8,13 @@
 
   <section class="find_section ">
         <div class="container">
-            <form action="">
+            <form action="verif_login.php" method="POST">
                 <div class=" form-row">
                     <div class="col-md-5">
-                        <input type="text" class="form-control" placeholder="Login">
+                        <input name="login" id="login" type="text" class="form-control" placeholder="Login">
                     </div>
                     <div class="col-md-5">
-                        <input type="text" class="form-control" placeholder="Mot de passe ">
+                        <input name="mdp" id="mdp" type="text" class="form-control" placeholder="Mot de passe ">
                     </div>
                     <div class="col-md-2">
                         <button type="submit" class="">
