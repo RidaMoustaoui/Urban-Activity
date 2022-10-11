@@ -11,34 +11,33 @@
     <div class="container-fluid">
       <div class="heading_container">
         <h2>
-          House For Sale
+          Activités
         </h2>
         <p>
-          There are many variations of passages of Lorem Ipsum available, but the
+          Voici les activités proposés par vos collègues et votre entreprise.
         </p>
       </div>
       <div class="sale_container">
-        
-      
   
         <!-- Affichier des activités dynamiquement -->
         <?php
+          include('get_act.php');
           $i=1;
-          for($i;$i<=6;$i++)
+          for($i;$i<=$row1[0];$i++)
           {
             echo '
             <div class="box">
             <div class="img-box">
-              <a href="house.php">
-                <img src="images/s-'.$i.'.jpg" alt="">
+              <a href="'.$row[3].'" target="_blank">
+                <img src="images/'.$row[4].'" alt="">
               </a>
             </div>
             <div class="detail-box">
               <h6>
-                Activité test '.$i.'
+                '.$row[1].'
               </h6>
               <p>
-                Description de l\'activité.
+                '.$row[2].'
               </p>
             </div>
           </div>';
@@ -48,8 +47,6 @@
   </section>
 
   <!-- end sale section -->
-
-
 
   <!-- info section -->
   <section class="info_section ">
