@@ -5,42 +5,10 @@
     require("inc.php");
   ?>
 
-  <!-- about section -->
-
-  <section class="about_section layout_padding-bottom">
-    
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="img-box">
-            <img src="images/about-img.jpg" alt="">
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="detail-box">
-            <div class="heading_container">
-              <h2>
-                A propos de nos activités
-              </h2>
-            </div>
-            <p>
-              Découvrez des activités proposés par vos collègues de travail ou par votre entreprise.
-            </p>
-            <a href="">
-              Découvrir
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end about section -->
-
   <!-- sale section -->
 
   <section class="sale_section layout_padding-bottom">
-    <div class="container-fluid">
+    <div class="container-fluid" style="padding-top:50px">
       <div class="heading_container">
         <h2>
           Découvrez les activités du moment.

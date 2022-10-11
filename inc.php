@@ -62,7 +62,7 @@
                   <a class="mr-4" href="">
                     Bonjour '. $_SESSION['Mail'].'
                   </a>
-                  <a class="" href="">
+                  <a class="" href="disconnect.php">
                     Se déconnecter
                   </a>
                 </li>
