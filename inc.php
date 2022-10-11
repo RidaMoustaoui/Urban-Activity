@@ -23,7 +23,10 @@
 </head>
 
 <?php
-  session_start();
+  if(!isset($_SESSION['Mail']))
+  {
+    session_start();
+  }
 ?>
 
 <body>
