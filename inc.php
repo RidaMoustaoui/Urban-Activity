@@ -22,6 +22,14 @@
   <link href="css/responsive.css" rel="stylesheet" />
 </head>
 
+<?php
+  session_start();
+  if(isset($_SESSION['Mail']))
+  {
+    echo $_SESSION['Mail'];
+  }
+?>
+
 <body>
   <div class="hero_area">
     <!-- header section strats -->
