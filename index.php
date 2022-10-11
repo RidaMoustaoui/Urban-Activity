@@ -182,7 +182,7 @@
             echo '
             <div class="box">
             <div class="img-box">
-              <a href="index.php">
+              <a href="house.php">
                 <img src="images/s-'.$i.'.jpg" alt="">
               </a>
             </div>
