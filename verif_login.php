@@ -22,11 +22,9 @@ try {
         exit;
     } else {
         if ($row[0] == $mail and $row[1] == $mdp) {
-            session_start();
             $_SESSION['Mail'] = $row[0];
             $_SESSION["time"] = time();
             include("index.php");
-            echo $_SESSION['Mail'];
         } else {
             echo "Echec de connexion";
             header("Location: login.php");

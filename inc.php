@@ -22,10 +22,6 @@
   <link href="css/responsive.css" rel="stylesheet" />
 </head>
 
-<?php
-    echo $_SESSION['Mail'];
-?>
-
 <body>
   <div class="hero_area">
     <!-- header section strats -->
