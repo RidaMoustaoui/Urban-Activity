@@ -38,10 +38,10 @@
             <ul class="navbar-nav justify-content-between ">
               <div class="User_option">
                 <li class="">
-                  <a class="mr-4" href="">
+                  <a class="mr-4" href="login.php">
                     Se connecter
                   </a>
-                  <a class="" href="">
+                  <a class="" href="signup.php">
                     S'inscrire
                   </a>
                 </li>
