@@ -5,37 +5,10 @@
     require("inc.php");
   ?>
 
-  <!-- find section -->
-  <section class="find_section ">
-    <div class="container">
-      <form action="">
-        <div class=" form-row">
-          <div class="col-md-5">
-            <input type="text" class="form-control" placeholder="Saisir une catégorie">
-          </div>
-          <div class="col-md-5">
-            <input type="text" class="form-control" placeholder="Lieu ">
-          </div>
-          <div class="col-md-2">
-            <button type="submit" class="">
-              Rechercher
-            </button>
-          </div>
-        </div>
-
-      </form>
-    </div>
-  </section>
-
-  <!-- end find section -->
-
-
   <!-- about section -->
 
   <section class="about_section layout_padding-bottom">
-    <div class="square-box">
-      <img src="images/square.png" alt="">
-    </div>
+    
     <div class="container">
       <div class="row">
         <div class="col-md-6">
@@ -83,6 +56,21 @@
           include('connect.php');
 
           try {
+            $sql1 = "SELECT COUNT(ActId) FROM activity";
+            $res1 = mysqli_query($conn, $sql1);
+        
+            if (!$res1) {
+                printf("Error: %s\n", mysqli_error($conn));
+                exit();
+            }
+        
+            $row1 = mysqli_fetch_array($res1, MYSQLI_NUM);
+        
+        } catch (Exception $e) {
+            echo $e;
+        }
+
+          try {
               $sql = "SELECT * FROM activity";
               $res = mysqli_query($conn, $sql);
           
@@ -90,52 +78,34 @@
                   printf("Error: %s\n", mysqli_error($conn));
                   exit();
               }
-          
-              $row = mysqli_fetch_array($res, MYSQLI_NUM);
-          
-          } catch (Exception $e) {
-              echo $e;
-          }
-          
-          try {
-              $sql1 = "SELECT COUNT(ActId) FROM activity";
-              $res1 = mysqli_query($conn, $sql1);
-          
-              if (!$res1) {
-                  printf("Error: %s\n", mysqli_error($conn));
-                  exit();
+              
+              while($row=mysqli_fetch_array($res))
+              {
+                echo '
+                <div class="box">
+                <div class="img-box">
+                  <a href="'.$row[3].'" target="_blank">
+                    <img src="images/'.$row[4].'" alt="">
+                  </a>
+                </div>
+                <div class="detail-box">
+                  <h6>
+                    '.$row[1].'
+                  </h6>
+                  <p>
+                    '.$row[2].'
+                  </p>
+                </div>
+              </div>';
               }
           
-              $row1 = mysqli_fetch_array($res1, MYSQLI_NUM);
-          
           } catch (Exception $e) {
               echo $e;
-          }
-          
-          $i=1;
-          for($i;$i<=$row1[0];$i++)
-          {
-            echo '
-            <div class="box">
-            <div class="img-box">
-              <a href="'.$row[3].'" target="_blank">
-                <img src="images/'.$row[4].'" alt="">
-              </a>
-            </div>
-            <div class="detail-box">
-              <h6>
-                '.$row[1].'
-              </h6>
-              <p>
-                '.$row[2].'
-              </p>
-            </div>
-          </div>';
           }
         ?>
         </div>
       <div class="btn-box">
-        <a href="">
+        <a href="house.php">
           Toutes les activités
         </a>
       </div>
@@ -410,7 +380,7 @@
 
   <!-- client secction -->
 
-  <section class="client_section layout_padding">
+  <section class="client_section" style="padding-bottom:90px">
     <div class="container-fluid">
       <div class="heading_container">
         <h2>

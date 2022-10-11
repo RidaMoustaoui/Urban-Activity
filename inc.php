@@ -90,9 +90,9 @@
               <div class="overlay-content">
                 <a href="index.php">Accueil</a>
                 <a href="house.php">Activités</a>
-                <a href="about.php">À propos</a>
+                <!-- <a href="about.php">À propos</a>
                 <a href="price.php">JSP QUOI METTRE</a>
-                <a href="contact.php">Contactez Nous</a>
+                <a href="contact.php">Contactez Nous</a> -->
               </div>
             </div>
           </div>
@@ -115,8 +115,8 @@
                 Découvrez les activités de votre entreprise.
               </p>
               <div class="btn-box">
-                <a href="" class="">
-                  Découvrir
+                <a href="about.php" class="">
+                  Savoir plus
                 </a>
               </div>
             </div>
