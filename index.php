@@ -2,7 +2,6 @@
 <html>
 
   <?php
-    session_start();
     require("inc.php");
   ?>
 

@@ -22,6 +22,10 @@
   <link href="css/responsive.css" rel="stylesheet" />
 </head>
 
+<?php
+    echo $_SESSION['Mail'];
+?>
+
 <body>
   <div class="hero_area">
     <!-- header section strats -->
@@ -35,21 +39,7 @@
             <ul class="navbar-nav justify-content-between ">
               <div class="User_option">
                 <?php
-                if($_SESSION['Mail']<>"")
-                {
-                    echo '
-                    <li class="">
-                  <a class="mr-4" href="login.php">
-                    X
-                  </a>
-                  <a class="" href="signup.php">
-                    S\'inscrire
-                  </a>
-                </li>
-                    ';
-                }
-                else
-                {
+                
                     echo '
                     <li class="">
                   <a class="mr-4" href="login.php">
@@ -60,7 +50,6 @@
                   </a>
                 </li>
                     ';
-                }
                 
                 ?>
               </div>
