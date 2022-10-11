@@ -22,6 +22,10 @@
   <link href="css/responsive.css" rel="stylesheet" />
 </head>
 
+<?php
+    echo $_SESSION['Mail'];
+?>
+
 <body>
   <div class="hero_area">
     <!-- header section strats -->
@@ -34,14 +38,20 @@
           <div class="navbar-collapse" id="">
             <ul class="navbar-nav justify-content-between ">
               <div class="User_option">
-                <li class="">
+                <?php
+                
+                    echo '
+                    <li class="">
                   <a class="mr-4" href="login.php">
                     Se connecter
                   </a>
                   <a class="" href="signup.php">
-                    S'inscrire
+                    S\'inscrire
                   </a>
                 </li>
+                    ';
+                
+                ?>
               </div>
             </ul>
 

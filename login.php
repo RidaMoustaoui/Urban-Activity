@@ -2,8 +2,8 @@
 <html>
 
 <?php
-    require("connect.php");
     require("inc.php");
+    require("connect.php");
   ?>
 
   <section class="find_section ">

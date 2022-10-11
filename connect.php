@@ -3,10 +3,10 @@
 $servername="127.0.0.1";
 $username="root";
 $password="";
-$base="urban activity";
+$base="urbanactivity";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password);
+$conn = new mysqli($servername, $username, $password,$base, 3306);
 
 // Check connection
 if ($conn->connect_error) {
