@@ -14,7 +14,6 @@ try {
         exit();
     }
 
-    // Tableau numérique
     $row = mysqli_fetch_array($res, MYSQLI_NUM);
     if ($mail == "" or $mdp == "") {
         echo "Echec de connexion";

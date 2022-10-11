@@ -24,6 +24,7 @@
 
 <?php
   session_start();
+  
   if(isset($_SESSION['Mail']))
   {
     echo $_SESSION['Mail'];
