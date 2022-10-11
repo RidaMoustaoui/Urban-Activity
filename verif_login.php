@@ -14,7 +14,6 @@ try {
         exit();
     }
 
-    // Tableau numérique
     $row = mysqli_fetch_array($res, MYSQLI_NUM);
     if ($mail == "" or $mdp == "") {
         echo "Echec de connexion";
@@ -22,6 +21,7 @@ try {
         exit;
     } else {
         if ($row[0] == $mail and $row[1] == $mdp) {
+            session_start();
             $_SESSION['Mail'] = $row[0];
             $_SESSION["time"] = time();
             include("index.php");

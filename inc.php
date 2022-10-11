@@ -22,6 +22,13 @@
   <link href="css/responsive.css" rel="stylesheet" />
 </head>
 
+<?php
+  if(!isset($_SESSION['Mail']))
+  {
+    session_start();
+  }
+?>
+
 <body>
   <div class="hero_area">
     <!-- header section strats -->
@@ -35,7 +42,8 @@
             <ul class="navbar-nav justify-content-between ">
               <div class="User_option">
                 <?php
-                
+                    if(!isset($_SESSION['Mail']))
+                    {
                     echo '
                     <li class="">
                   <a class="mr-4" href="login.php">
@@ -46,6 +54,20 @@
                   </a>
                 </li>
                     ';
+                    }
+                    else
+                    {
+                      echo '
+                    <li class="">
+                  <a class="mr-4" href="">
+                    Bonjour '. $_SESSION['Mail'].'
+                  </a>
+                  <a class="" href="">
+                    Se déconnecter
+                  </a>
+                </li>
+                    ';
+                    }
                 
                 ?>
               </div>
