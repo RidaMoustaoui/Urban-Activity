@@ -2,6 +2,7 @@
 <html>
 
 <?php
+    require("connect.php");
     require("inc.php");
   ?>
 
