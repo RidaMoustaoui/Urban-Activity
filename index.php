@@ -4,7 +4,6 @@
   <?php
     require("inc.php");
   ?>
-    
 
   <!-- find section -->
   <section class="find_section ">
