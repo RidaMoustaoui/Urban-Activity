@@ -21,27 +21,56 @@
   
         <!-- Affichier des activités dynamiquement -->
         <?php
-          include('get_act.php');
-          $i=1;
-          for($i;$i<=$row1[0];$i++)
-          {
-            echo '
-            <div class="box">
-            <div class="img-box">
-              <a href="'.$row[3].'" target="_blank">
-                <img src="images/'.$row[4].'" alt="">
-              </a>
-            </div>
-            <div class="detail-box">
-              <h6>
-                '.$row[1].'
-              </h6>
-              <p>
-                '.$row[2].'
-              </p>
-            </div>
-          </div>';
+          include('connect.php');
+
+          try {
+            $sql1 = "SELECT COUNT(ActId) FROM activity";
+            $res1 = mysqli_query($conn, $sql1);
+        
+            if (!$res1) {
+                printf("Error: %s\n", mysqli_error($conn));
+                exit();
+            }
+        
+            $row1 = mysqli_fetch_array($res1, MYSQLI_NUM);
+        
+        } catch (Exception $e) {
+            echo $e;
+        }
+
+          try {
+              $sql = "SELECT * FROM activity";
+              $res = mysqli_query($conn, $sql);
+          
+              if (!$res) {
+                  printf("Error: %s\n", mysqli_error($conn));
+                  exit();
+              }
+              
+              while($row=mysqli_fetch_array($res))
+              {
+                echo '
+                <div class="box">
+                <div class="img-box">
+                  <a href="'.$row[3].'" target="_blank">
+                    <img src="images/'.$row[4].'" alt="">
+                  </a>
+                </div>
+                <div class="detail-box">
+                  <h6>
+                    '.$row[1].'
+                  </h6>
+                  <p>
+                    '.$row[2].'
+                  </p>
+                </div>
+              </div>';
+              }
+          
+          } catch (Exception $e) {
+              echo $e;
           }
+          
         ?>
     </div>
   </section>
