@@ -3,7 +3,7 @@
 
 <?php
     require("inc.php");
-  ?><br>
+  ?>
 
   <!-- find section -->
   <section class="find_section ">

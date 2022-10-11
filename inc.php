@@ -61,10 +61,10 @@
             <div id="myNav" class="overlay">
               <div class="overlay-content">
                 <a href="index.php">Accueil</a>
-                <a href="house.html">Activités</a>
-                <a href="about.html">À propos</a>
-                <a href="price.html">JSP QUOI METTRE</a>
-                <a href="contact.html">Contactez Nous</a>
+                <a href="house.php">Activités</a>
+                <a href="about.php">À propos</a>
+                <a href="price.php">JSP QUOI METTRE</a>
+                <a href="contact.php">Contactez Nous</a>
               </div>
             </div>
           </div>
