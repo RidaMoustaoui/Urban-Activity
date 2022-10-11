@@ -457,7 +457,7 @@
     <div class="container">
       <div class="heading_container">
         <h2>
-          Get In Touch
+          Informations
         </h2>
       </div>
     </div>
@@ -487,7 +487,7 @@
               </div>
               <div class="d-flex ">
                 <button>
-                  Send
+                  Envoyer
                 </button>
               </div>
             </form>
@@ -509,14 +509,14 @@
         <div class="col-md-3">
           <div class="info_contact">
             <h5>
-              About Apartment
+              Localisation de l'entreprise
             </h5>
             <div>
               <div class="img-box">
                 <img src="images/location.png" width="18px" alt="">
               </div>
               <p>
-                Address
+                Tour Eiffel
               </p>
             </div>
             <div>
@@ -524,7 +524,7 @@
                 <img src="images/phone.png" width="12px" alt="">
               </div>
               <p>
-                +01 1234567890
+                0101010101
               </p>
             </div>
             <div>
@@ -532,7 +532,7 @@
                 <img src="images/mail.png" width="18px" alt="">
               </div>
               <p>
-                demo@gmail.com
+                entreprise@gmail.com
               </p>
             </div>
           </div>
@@ -543,12 +543,12 @@
               Information
             </h5>
             <p>
-              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+              Le site permet de se rencontrer , s'amuser entre collégue à travers des activités.
             </p>
           </div>
         </div>
 
-        <div class="col-md-3">
+       <!-- <div class="col-md-3">
           <div class="info_links">
             <h5>
               Useful Link
@@ -586,7 +586,7 @@
               </li>
             </ul>
           </div>
-        </div>
+        </div> -->
         <div class="col-md-3">
           <div class="info_form ">
             <h5>
@@ -599,16 +599,16 @@
               </button>
             </form>
             <div class="social_box">
-              <a href="">
+              <a href="https://fr-fr.facebook.com/">
                 <img src="images/fb.png" alt="">
               </a>
-              <a href="">
+              <a href="https://twitter.com/?lang=fr">
                 <img src="images/twitter.png" alt="">
               </a>
-              <a href="">
+              <a href="https://fr.linkedin.com/">
                 <img src="images/linkedin.png" alt="">
               </a>
-              <a href="">
+              <a href="https://www.youtube.com/">
                 <img src="images/youtube.png" alt="">
               </a>
             </div>
@@ -626,7 +626,7 @@
     <div class="container">
       <p>
         &copy; <span id="displayYear"></span> All Rights Reserved By
-        <a href="https://html.design/">Free Html Templates</a>
+        <a href="https://html.design/">Rida MOUSTAOUI, Salman KHAN, Abdel RADY, William, Bilel</a>
       </p>
     </div>
   </section>
