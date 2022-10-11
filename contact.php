@@ -65,10 +65,10 @@
             <div id="myNav" class="overlay">
               <div class="overlay-content">
                 <a href="index.php">HOME</a>
-                <a href="about.html">ABOUT</a>
-                <a href="house.html">HOUSE</a>
-                <a href="price.html">PRICING</a>
-                <a href="contact.html">CONTACT US</a>
+                <a href="about.php">ABOUT</a>
+                <a href="house.php">HOUSE</a>
+                <a href="price.php">PRICING</a>
+                <a href="contact.php">CONTACT US</a>
               </div>
             </div>
           </div>
