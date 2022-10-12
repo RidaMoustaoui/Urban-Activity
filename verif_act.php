@@ -1,5 +1,10 @@
 <?php
 
+if(!isset($_SESSION['Mail']))
+  {
+    session_start();
+  }
+
 $titre = $_POST['Titre'];
 $desc = $_POST['Desc'];
 $actlien = $_POST['ActLien'];
@@ -20,6 +25,23 @@ try {
     $sql = "INSERT INTO activity (Titre, Description, ActLien, DateAct, MaxPart, Image, UserID) VALUES ('".$titre."', '".$desc."', '".$actlien."', '".$dateact."', '".$maxpart."', '".$img."', '".$_SESSION['UserID']."');";
     if(mysqli_query($conn, $sql))
     {
+        $sql2 = "SELECT MAX(ActId) FROM activity";
+              $res2 = mysqli_query($conn, $sql2);
+          
+              if (!$res2) {
+                  printf("Error: %s\n", mysqli_error($conn));
+                  exit();
+              }
+              
+              while($row2=mysqli_fetch_array($res2))
+              {
+                $sql1 = "INSERT INTO participe (UserID, ActId) VALUES ('".$_SESSION['UserID']."','".$row2[0]."')";
+                if(mysqli_query($conn, $sql1))
+                {
+                    
+                }
+              }
+
         echo "l'activité a été créé";
         include('house.php');
     }

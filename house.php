@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 <?php
     require("inc.php");
   ?>
+
   <!-- sale section -->
+
   <section class="sale_section layout_padding">
     <div class="container-fluid">
       <div class="heading_container">
@@ -25,9 +28,11 @@
             </form>
       </div>
       <div class="sale_container">
+  
         <!-- Affichier des activités dynamiquement -->
         <?php
           include('connect.php');
+
           try {
             $sql1 = "SELECT COUNT(ActId) FROM activity";
             $res1 = mysqli_query($conn, $sql1);
@@ -54,28 +59,51 @@
               
               while($row=mysqli_fetch_array($res))
               {
-                echo '
-                <div class="box">
-                <div class="img-box">
-                  <a href="'.$row[3].'" target="_blank">
-                  <img src="'.$row[4].'" alt="" width="200px" height="350px">
-                  </a>
-                </div>
-                <div class="detail-box">
-                  <h6>
-                    '.$row[1].'
-                  </h6>
-                  <p>
-                    '.$row[2].'
-                  </p>
-                </div>
-              </div>';
+                $sql2= "SELECT Nom, Prenom FROM users WHERE UserID=".$row[7] ;
+              $res2 = mysqli_query($conn, $sql2);
+                while($row2=mysqli_fetch_array($res2))
+                {
+
+                  /* "Select COUNT(*) from participe where ActID=" $row[0] " NOMBRE DE PARTICIPANTS*/
+                  /* "Select MaxPart from activity where ActID=" $row[0] " NOMBRE MAX*/
+                  $sql3="SELECT COUNT(*) FROM participe WHERE ActId=".$row[0];
+                  $res3=mysqli_query($conn, $sql3);
+                  $sql4="SELECT MaxPart from activity WHERE ActId=".$row[0];
+                  $res4=mysqli_query($conn,$sql4);
+                  while($row3=mysqli_fetch_array($res3))
+                  {
+                      while($row4=mysqli_fetch_array($res4))
+                      {
+                        echo '
+                        <div class="box">
+                        <div class="img-box">
+                          <a href="'.$row[3].'" target="_blank">
+                          <img src="'.$row[4].'" alt="" width="200px" height="350px">
+                          </a>
+                        </div>
+                        <div class="detail-box">
+                          <h6>
+                            '.$row[1].' 
+                          </h6>
+                          <p>
+                          <form action="participe.php" method="POST">
+                          <button>
+                          Participer : '.$row3[0].'/'.$row4[0].' 
+                        </button>
+                        </form>
+                            '.$row[2].' - Créé par '.$row2[0]. ' '.$row2[1].'
+                          </p>
+                        </div>
+                      </div>';
+                      }
+                  }
+                
+                }
               }
           
           } catch (Exception $e) {
               echo $e;
           }
-          
         ?>
     </div>
   </section>
