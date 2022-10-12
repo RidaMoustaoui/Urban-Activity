@@ -14,7 +14,7 @@
             <input name="Mail" id="Mail" type="text" class="form-control" placeholder="Mail">
           </div>
           <div class="col-md-5">
-            <input name="Mdp" id="Mdp" type="text" class="form-control" placeholder="Mot de passe">
+            <input name="Mdp" id="Mdp" type="password" class="form-control" placeholder="Mot de passe">
           </div>
           <div class="col-md-5">
             <input name="Nom" id="Nom" type="text" class="form-control" placeholder="NOM">

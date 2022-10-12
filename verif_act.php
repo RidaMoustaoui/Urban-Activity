@@ -17,7 +17,7 @@ else
     include('connect.php');
 
 try {
-    $sql = "INSERT INTO activity (Titre, Description, ActLien, DateAct, MaxPart, Image) VALUES ('".$titre."', '".$desc."', '".$actlien."', '".$dateact."', '".$maxpart."', '".$img."');";
+    $sql = "INSERT INTO activity (Titre, Description, ActLien, DateAct, MaxPart, Image, UserID) VALUES ('".$titre."', '".$desc."', '".$actlien."', '".$dateact."', '".$maxpart."', '".$img."', '".$_SESSION['UserID']."');";
     if(mysqli_query($conn, $sql))
     {
         echo "l'activité a été créé";

@@ -49,6 +49,10 @@
               
               while($row=mysqli_fetch_array($res))
               {
+                $sql2= "SELECT Nom, Prenom FROM users WHERE UserID=".$row[7] ;
+              $res2 = mysqli_query($conn, $sql2);
+                while($row2=mysqli_fetch_array($res2))
+                {
                 echo '
                 <div class="box">
                 <div class="img-box">
@@ -61,10 +65,11 @@
                     '.$row[1].'
                   </h6>
                   <p>
-                    '.$row[2].'
+                    '.$row[2].' - Créé par '.$row2[0]. ' '.$row2[1].'
                   </p>
                 </div>
               </div>';
+                }
               }
           
           } catch (Exception $e) {
