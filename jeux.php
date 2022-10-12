@@ -22,16 +22,16 @@
         <link href="css/style.css" rel="stylesheet" />
         <div class="jeu">
   <a href="http://localhost/Urban-Activity/demineur.html"> 
-    <img src="logograph.png" width="500px" height="150px"/>
+    <img src="logograph.png" width="500px" height="100px"/>
   </a>
   <a href="http://localhost/urban-Activity/index.html"> 
-    <img src="des.jpg"  width="500px" height="150px" />
+    <img src="des.jpg"  width="500px" height="100px" />
   </a>
   <a href="http://localhost/urban-Activity/snake.html">
-     <img src="snake.jpg"  width="500px" height="150px" />
+     <img src="snake.jpg"  width="500px" height="100px" />
   </a>
   <a href="http://localhost/Urban-Activity/morpion.html"> 
-    <img src="morpion.png"  width="500px" height="150px" />
+    <img src="morpion.png"  width="500px" height="100px" />
   </a>
  
 
