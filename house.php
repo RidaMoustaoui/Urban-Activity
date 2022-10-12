@@ -48,38 +48,43 @@
             echo $e;
         }
 
-          try {
-              $sql = "SELECT * FROM activity";
-              $res = mysqli_query($conn, $sql);
-          
-              if (!$res) {
-                  printf("Error: %s\n", mysqli_error($conn));
-                  exit();
-              }
-              
-              while($row=mysqli_fetch_array($res))
-              {
-                echo '
-                <div class="box">
-                <div class="img-box">
-                  <a href="'.$row[3].'" target="_blank">
-                    <img src="'.$row[4].'" alt="">
-                  </a>
-                </div>
-                <div class="detail-box">
-                  <h6>
-                    '.$row[1].'
-                  </h6>
-                  <p>
-                    '.$row[2].'
-                  </p>
-                </div>
-              </div>';
-              }
-          
-          } catch (Exception $e) {
-              echo $e;
+        try {
+          $sql = "SELECT * FROM activity";
+          $res = mysqli_query($conn, $sql);
+      
+          if (!$res) {
+              printf("Error: %s\n", mysqli_error($conn));
+              exit();
           }
+          
+          while($row=mysqli_fetch_array($res))
+          {
+            $sql2= "SELECT Nom, Prenom FROM users WHERE UserID=".$row[7] ;
+          $res2 = mysqli_query($conn, $sql2);
+            while($row2=mysqli_fetch_array($res2))
+            {
+            echo '
+            <div class="box">
+            <div class="img-box">
+              <a href="'.$row[3].'" target="_blank">
+                <img src="'.$row[4].'" alt="">
+              </a>
+            </div>
+            <div class="detail-box">
+              <h6>
+                '.$row[1].'
+              </h6>
+              <p>
+                '.$row[2].' - Créé par '.$row2[0]. ' '.$row2[1].'
+              </p>
+            </div>
+          </div>';
+            }
+          }
+      
+      } catch (Exception $e) {
+          echo $e;
+      }
           
         ?>
     </div>
