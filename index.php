@@ -406,7 +406,22 @@
                 </div>
               </div>
             </div>
-
+            <div class="carousel-item">
+              <div class="box">
+                <div class="img-box">
+                  <img src="images/William.jpg" alt="William" width="100" height="143">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    <span>William Coudair</span>
+                    <hr>
+                  </h5>
+                  <p>
+                    Infra
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
           <!-- <div class="carousel-item">
               <div class="box">
