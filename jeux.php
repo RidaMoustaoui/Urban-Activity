@@ -22,25 +22,25 @@
         <link href="css/style.css" rel="stylesheet" />
         <div class="jeu">
           <div style="border: double">
-  <a href="urban-Activity/demineur.html"> 
+  <a href="demineur.html"> 
     <img src="logograph.png" width="300px" height="100px" />
   </a>
   </div>
   <p>&nbsp;</p>
   <div style="border: double">
-  <a href="urban-Activity/index.html"> 
+  <a href="index.html"> 
     <img src="des.jpg"  width="300px" height="100px" />
   </a>
   </div>
   <p>&nbsp;</p>
   <div style="border: double">
-  <a href="urban-Activity/snake.html">
+  <a href="snake.html">
      <img src="snake.jpg"  width="300px" height="100px" />
   </a>
   </div>
   <p>&nbsp;</p>
   <div style="border: double">
-  <a href="urban-Activity/morpion.html"> 
+  <a href="morpion.html"> 
     <img src="morpion.png"  width="300px" height="100px" />
   </a>
   </div>
