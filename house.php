@@ -64,11 +64,8 @@
                 while($row2=mysqli_fetch_array($res2))
                 {
 
-<<<<<<< Updated upstream
-=======
                   /* "Select COUNT(*) from participe where ActID=" $row[0] " NOMBRE DE PARTICIPANTS*/
                   /* "Select MaxPart from activity where ActID=" $row[0] " NOMBRE MAX*/
->>>>>>> Stashed changes
                   $sql3="SELECT COUNT(*) FROM participe WHERE ActId=".$row[0];
                   $res3=mysqli_query($conn, $sql3);
                   $sql4="SELECT MaxPart from activity WHERE ActId=".$row[0];
