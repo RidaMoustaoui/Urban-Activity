@@ -16,6 +16,11 @@
         <p>
           Voici les activités proposés par vos collègues et votre entreprise.
         </p>
+        <form action="creAct.php">
+              <button>
+                Créez une activité
+              </button>
+            </form>
       </div>
       <div class="sale_container">
   

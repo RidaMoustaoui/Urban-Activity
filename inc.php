@@ -90,8 +90,7 @@
               <div class="overlay-content">
                 <a href="index.php">Accueil</a>
                 <a href="house.php">Activités</a>
-                <!-- <a href="about.php">À propos</a>
-                <a href="price.php">JSP QUOI METTRE</a>
+                <!--<a href="price.php">JSP QUOI METTRE</a>
                 <a href="contact.php">Contactez Nous</a> -->
               </div>
             </div>
