@@ -403,11 +403,9 @@
                   <p>
                     Developpeur
                   </p>
-                </div>
               </div>
             </div>
-          </div>
-          <!-- <div class="carousel-item">
+            <div class="carousel-item">
               <div class="box">
                 <div class="img-box">
                   <img src="images/William.jpg" alt="William" width="100" height="143">
@@ -422,8 +420,10 @@
                   </p>
                 </div>
               </div>
+          </div>
+          </div>
             </div>
-          </div> -->
+          </div> 
           <!-- <div class="carousel-item">
               <div class="box">
                 <div class="img-box">
