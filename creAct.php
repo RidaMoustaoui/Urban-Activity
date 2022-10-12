@@ -11,27 +11,35 @@
       <form action="verif_signup.php" method="POST">
         <div class=" form-row">
           <div class="col-md-5">
+            <label>Titre</label>
             <input name="Titre" id="Titre" type="text" class="form-control" placeholder="Titre">
           </div>
           <div class="col-md-5">
+          <label>Description</label>
             <input name="Desc" id="Desc" type="text" class="form-control" placeholder="Description">
           </div>
+          <div> </div>
           <div class="col-md-5">
-            <input name="ActLien" id="ActLien" type="text" class="form-control" placeholder="Site Web">
+          <label>Site de l'activité</label>
+            <input name="ActLien" id="ActLien" type="text" class="form-control" placeholder="Site de l'activité">
           </div>
           <div class="col-md-5">
+          <label>Date de l'activité</label>
             <input name="DateAct" id="DateAct" type="date" class="form-control" placeholder="Date de l'activité">
           </div>
           <div class="col-md-5">
-            <input name="MaxPart" id="MaxPart" type="date" class="form-control" placeholder="">
+          <label>Nombre max de participants</label>
+            <input name="MaxPart" id="MaxPart" type="number" min="1" class="form-control" placeholder="Nombre max de participants">
           </div>
-          <div class="col-md-2">
-            <button type="submit" class="">
-              S'inscrire
-            </button>
+          <div class="col-md-5">
+          <label>Image de l'activité</label>
+            <input name="Img" id="Img" type="file" class="form-control" placeholder="Image">
           </div>
         </div>
 
+        <button type="submit" style=" background-color: #f97616; color: #ffffff;text-transform: uppercase;border: none;height: 45px;width: 83%;margin: 10px 0;">
+              Créer l'activité
+            </button>
       </form>
     </div>
   </section>
