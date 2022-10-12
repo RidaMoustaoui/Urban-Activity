@@ -952,6 +952,13 @@ a:focus {
 .footer_section a {
   color: #ffffff;
 }
+.jeu {
+	display: grid;
+  }
+.left{
+  position : fixed; 
+  left : 0px;
+}
 
 /* end footer section*/
 /*# sourceMappingURL=style.css.map */
