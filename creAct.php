@@ -8,7 +8,7 @@
   <!-- find section -->
   <section class="find_section ">
     <div class="container">
-      <form action="verif_signup.php" method="POST">
+      <form action="verif_act.php" method="POST">
         <div class=" form-row">
           <div class="col-md-5">
             <label>Titre</label>
@@ -32,8 +32,8 @@
             <input name="MaxPart" id="MaxPart" type="number" min="1" class="form-control" placeholder="Nombre max de participants">
           </div>
           <div class="col-md-5">
-          <label>Image de l'activité</label>
-            <input name="Img" id="Img" type="file" class="form-control" placeholder="Image">
+          <label>Lien de l'image de l'activité</label>
+            <input name="Img" id="Img" type="text" class="form-control" placeholder="Lien de l'image">
           </div>
         </div>
 

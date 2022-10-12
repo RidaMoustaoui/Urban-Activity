@@ -58,7 +58,7 @@
                 <div class="box">
                 <div class="img-box">
                   <a href="'.$row[3].'" target="_blank">
-                    <img src="images/'.$row[4].'" alt="">
+                    <img src="'.$row[4].'" alt="">
                   </a>
                 </div>
                 <div class="detail-box">
