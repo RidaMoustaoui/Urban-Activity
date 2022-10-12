@@ -59,8 +59,8 @@
                     {
                       echo '
                     <li class="">
-                  <a class="mr-4" href="">
-                    Bonjour '. $_SESSION['Mail'].'
+                  <a class="mr-4" style="color:white">
+                    Bonjour '. $_SESSION['Nom'].' '. $_SESSION['Prenom'].'
                   </a>
                   <a class="" href="disconnect.php">
                     Se déconnecter
