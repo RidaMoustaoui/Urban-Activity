@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html>
-
 <?php
     require("inc.php");
   ?>
-
   <!-- sale section -->
-
   <section class="sale_section layout_padding">
     <div class="container-fluid">
       <div class="heading_container">
@@ -28,11 +25,9 @@
             </form>
       </div>
       <div class="sale_container">
-  
         <!-- Affichier des activités dynamiquement -->
         <?php
           include('connect.php');
-
           try {
             $sql1 = "SELECT COUNT(ActId) FROM activity";
             $res1 = mysqli_query($conn, $sql1);

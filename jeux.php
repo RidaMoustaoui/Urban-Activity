@@ -21,18 +21,29 @@
         <!-- Affichier des activités dynamiquement -->
         <link href="css/style.css" rel="stylesheet" />
         <div class="jeu">
-  <a href="http://localhost/Urban-Activity/demineur.html"> 
-    <img src="logograph.png" width="500px" height="100px"/>
+          <div style="border: double">
+  <a href="urban-Activity/demineur.html"> 
+    <img src="logograph.png" width="300px" height="100px" />
   </a>
-  <a href="http://localhost/urban-Activity/index.html"> 
-    <img src="des.jpg"  width="500px" height="100px" />
+  </div>
+  <p>&nbsp;</p>
+  <div style="border: double">
+  <a href="urban-Activity/index.html"> 
+    <img src="des.jpg"  width="300px" height="100px" />
   </a>
-  <a href="http://localhost/urban-Activity/snake.html">
-     <img src="snake.jpg"  width="500px" height="100px" />
+  </div>
+  <p>&nbsp;</p>
+  <div style="border: double">
+  <a href="urban-Activity/snake.html">
+     <img src="snake.jpg"  width="300px" height="100px" />
   </a>
-  <a href="http://localhost/Urban-Activity/morpion.html"> 
-    <img src="morpion.png"  width="500px" height="100px" />
+  </div>
+  <p>&nbsp;</p>
+  <div style="border: double">
+  <a href="urban-Activity/morpion.html"> 
+    <img src="morpion.png"  width="300px" height="100px" />
   </a>
+  </div>
  
 
 </div>
