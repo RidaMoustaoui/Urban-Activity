@@ -17,9 +17,14 @@
           Voici les activités proposés par vos collègues et votre entreprise.
         </p>
         <form action="creAct.php">
-              <button>
-                Créez une activité
-              </button>
+          <?php
+            if(isset($_SESSION['Mail']))
+            {
+              echo '<button>
+              Créez une activité
+            </button>';
+            }
+          ?>
             </form>
       </div>
       <div class="sale_container">
@@ -58,7 +63,7 @@
                 <div class="box">
                 <div class="img-box">
                   <a href="'.$row[3].'" target="_blank">
-                    <img src="'.$row[4].'" alt="" widht="200px" height="200px">
+                    <img src="'.$row[4].'" alt="">
                   </a>
                 </div>
                 <div class="detail-box">
