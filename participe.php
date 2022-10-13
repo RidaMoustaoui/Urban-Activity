@@ -12,12 +12,12 @@ try
     if(mysqli_query($conn, $sql))
     {
         echo "Vous avez participé à l'activité";
-        include('login.php');
+        include('house.php');
     }
     else
     {
         echo "erreur";
-        include('signup.php');
+        include('house.php');
     }
     
 } catch (Exception $e) {
