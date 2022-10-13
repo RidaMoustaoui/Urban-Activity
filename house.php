@@ -79,6 +79,8 @@
                           {
                             echo '<form action="participe.php" method="POST">
                             <input type="hidden" id="getAct" name="getAct" value="'.$row[0].'" />
+                            <input type="hidden" id="getMax" name="getMax" value="'.$row4[0].'" />
+                            <input type="hidden" id="getPar" name="getPar" value="'.$row3[0].'" />
                             <button>
                             '.$row3[0].'/'.$row4[0].' Participants
                             </button>
