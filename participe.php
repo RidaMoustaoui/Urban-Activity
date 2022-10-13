@@ -8,7 +8,7 @@
 
 try
 {   
-    if($_POST['getPar'] <= $_Post['getMax'])
+    if($_POST['getPar'] <= $_POST['getMax'])
     {
         $sql = "INSERT INTO participe (UserID, ActId) VALUES ('".$_SESSION['UserID']."', '".$_POST['getAct']."');";
     if(mysqli_query($conn, $sql))
