@@ -11,14 +11,14 @@ try {
             $sql = "INSERT INTO participe (UserID, ActId) VALUES ('" . $_SESSION['UserID'] . "', '" . $_POST['getAct'] . "');";
             if (mysqli_query($conn, $sql)) {
                 echo "Vous avez participé à l'activité.";
-                include('house.php');
+                include('index.php');
             } else {
-                echo "Erreur.";
-                include('house.php');
+                echo "Erreur : Vous participez déjà à cette activité.";
+                include('index.php');
             }
         } else {
             echo "Erreur : Nombre max de participants atteint.";
-            include('house.php');
+            include('index.php');
         }
     } else {
         echo "Erreur : Veuillez réessayer";
