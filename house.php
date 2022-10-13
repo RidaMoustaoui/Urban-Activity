@@ -16,16 +16,7 @@
         <p>
           Voici les activités proposés par vos collègues et votre entreprise.
         </p>
-        <form action="creAct.php">
-          <?php
-            if(isset($_SESSION['Mail']))
-            {
-              echo '<button>
-              Créez une activité
-            </button>';
-            }
-          ?>
-            </form>
+        
       </div>
       <div class="sale_container">
   
@@ -109,8 +100,29 @@
           } catch (Exception $e) {
               echo $e;
           }
-        ?>
+        ?> 
     </div>
+          <br><br>
+
+    <div class="heading_container">
+        <h2>
+          Vous voulez créer une activité?
+        </h2>
+        <p>
+          Cliquez sur le bouton ci dessous pour accéder au formulaire de création d'activité
+        </p>
+      
+      <?php
+            if(isset($_SESSION['Mail']))
+            {
+              echo '<div class="btn-box">
+              <a href="creAct.php">
+                Créez une activité
+              </a>
+            </div>';
+            }
+          ?>
+      </div>
   </section>
 
   <!-- end sale section -->
