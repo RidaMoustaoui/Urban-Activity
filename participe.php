@@ -11,16 +11,16 @@ try
     if($_POST['getPar'] <= $_POST['getMax'])
     {
         $sql = "INSERT INTO participe (UserID, ActId) VALUES ('".$_SESSION['UserID']."', '".$_POST['getAct']."');";
-    if(mysqli_query($conn, $sql))
-    {
-        echo "Vous avez participé à l'activité";
-        include('house.php');
-    }
-    else
-    {
-        echo "erreur";
-        include('house.php');
-    }
+        if(mysqli_query($conn, $sql))
+        {
+            echo "Vous avez participé à l'activité";
+            include('house.php');
+        }
+        else
+        {
+            echo "erreur";
+            include('house.php');
+        }
     }else
     {
         echo "erreur";
