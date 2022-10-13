@@ -16,8 +16,8 @@ try {
 
     $row = mysqli_fetch_array($res, MYSQLI_NUM);
     if ($mail == "" or $mdp == "") {
-        echo "Echec de connexion";
-        header("Location: login.php");
+        echo "Echec de connexion.";
+        include("index.php");
         exit;
     } else {
         if ($row[0] == $mail and $row[1] == $mdp) {
@@ -29,8 +29,8 @@ try {
             $_SESSION["time"] = time();
             include("index.php");
         } else {
-            echo "Echec de connexion";
-            header("Location: login.php");
+            echo "Echec de connexion.";
+            include("index.php");
             exit;
         }
     }

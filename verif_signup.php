@@ -7,7 +7,7 @@ $prenom= $_POST['Prenom'];
 
 if($mail=="" or $mdp=="" or $nom=="" or $prenom=="")
 {
-    echo "Veuillez saisir un mail, un mot de passe, un nom et un prenom";
+    echo "Erreur : Veuillez saisir un mail, un mot de passe, un nom et un prenom.";
     include('signup.php');
 }
 else
@@ -18,12 +18,12 @@ try {
     $sql = "INSERT INTO users (Mail, Mdp, Nom, Prenom) VALUES ('".$mail."', '".$mdp."', '".$nom."', '".$prenom."');";
     if(mysqli_query($conn, $sql))
     {
-        echo "l'utilisateur a été créé";
+        echo "L'utilisateur a été créé.";
         include('login.php');
     }
     else
     {
-        echo "erreur";
+        echo "Erreur : Problème dans la requête.";
         include('signup.php');
     }
     

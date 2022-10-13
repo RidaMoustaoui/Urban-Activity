@@ -10,19 +10,19 @@ try {
         if ($_POST['getPar'] < $_POST['getMax']) {
             $sql = "INSERT INTO participe (UserID, ActId) VALUES ('" . $_SESSION['UserID'] . "', '" . $_POST['getAct'] . "');";
             if (mysqli_query($conn, $sql)) {
-                echo "Vous avez participé à l'activité";
+                echo "Vous avez participé à l'activité.";
                 include('house.php');
             } else {
-                echo "erreur";
-                header("Location: house.php");
+                echo "Erreur.";
+                include('house.php');
             }
         } else {
-            echo "erreur";
-            header("Location: house.php");
+            echo "Erreur : Nombre max de participants atteint.";
+            include('house.php');
         }
     } else {
-        echo "erreur";
-        header("Location: house.php");
+        echo "Erreur : Veuillez réessayer";
+        include('index.php');
     }
 } catch (Exception $e) {
     echo $e;
