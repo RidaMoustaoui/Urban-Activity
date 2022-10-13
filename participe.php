@@ -3,6 +3,25 @@
     {
       session_start();
     }
-    echo $_POST['getAct'];
-    echo $_SESSION['UserID'];
+
+    include('connect.php');
+
+try
+{
+    $sql = "INSERT INTO participe (UserID, ActId) VALUES ('".$_SESSION['UserID']."', '".$_POST['getAct']."');";
+    if(mysqli_query($conn, $sql))
+    {
+        echo "Vous avez participé à l'activité";
+        include('login.php');
+    }
+    else
+    {
+        echo "erreur";
+        include('signup.php');
+    }
+    
+} catch (Exception $e) {
+    echo $e;
+}
+
 ?>
