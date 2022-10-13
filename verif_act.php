@@ -4,12 +4,12 @@ if (!isset($_SESSION['Mail'])) {
     session_start();
 }
 
-$titre = $_POST['Titre'];
-$desc = $_POST['Desc'];
-$actlien = $_POST['ActLien'];
-$dateact = $_POST['DateAct'];
-$maxpart = $_POST['MaxPart'];
-$img = $_POST['Img'];
+$titre = str_replace("'", "\'", $_POST['Titre']);
+$desc = str_replace("'", "\'", $_POST['Desc']);
+$actlien = str_replace("'", "\'", $_POST['ActLien']);
+$dateact = str_replace("'", "\'", $_POST['DateAct']);
+$maxpart = str_replace("'", "\'", $_POST['MaxPart']);
+$img = str_replace("'", "\'", $_POST['Img']);
 
 if ($titre == "" or $dateact == "" or $maxpart == "") {
     echo "Veuillez saisir un titre, une date de début, et un nombre max de participants.";

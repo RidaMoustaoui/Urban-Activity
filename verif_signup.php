@@ -1,9 +1,9 @@
 <?php
 
-$mail = $_POST['Mail'];
-$mdp = $_POST['Mdp'];
-$nom = $_POST['Nom'];
-$prenom= $_POST['Prenom'];
+$mail = str_replace("'", "\'", $_POST['Mail']);
+$mdp = str_replace("'", "\'", $_POST['Mdp']);
+$nom = str_replace("'", "\'", $_POST['Nom']);
+$prenom = str_replace("'", "\'", $_POST['Prenom']);
 
 if($mail=="" or $mdp=="" or $nom=="" or $prenom=="")
 {

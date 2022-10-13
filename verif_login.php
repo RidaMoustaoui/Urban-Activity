@@ -1,7 +1,7 @@
 <?php
 
-$mail = $_POST['login'];
-$mdp = $_POST['mdp'];
+$mail = str_replace("'", "\'", $_POST['login']);
+$mdp = str_replace("'", "\'", $_POST['mdp']);
 
 include('connect.php');
 
