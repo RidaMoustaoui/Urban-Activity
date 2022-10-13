@@ -89,7 +89,7 @@
             <div id="myNav" class="overlay">
               <div class="overlay-content">
                 <a href="index.php">Accueil</a>
-                <a href="house.php">Activitées</a>
+                <a href="house.php">Activités</a>
                 <a href="jeux.php">Jeux</a>
                 <!--<a href="price.php">JSP QUOI METTRE</a>
                 <a href="contact.php">Contactez Nous</a> -->
@@ -108,8 +108,8 @@
           <div class="col-md-4 offset-md-1">
             <div class="detail-box">
               <h1>
-                <span> Urban</span> <br>
-                Activities <br>
+                <span> Fun</span> <br>
+                 Times<br>
               </h1>
               <p>
                 Découvrez les activités de votre entreprise.
