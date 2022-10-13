@@ -16,16 +16,7 @@
         <p>
           Voici les activités proposés par vos collègues et votre entreprise.
         </p>
-        <form action="creAct.php">
-          <?php
-            if(isset($_SESSION['Mail']))
-            {
-              echo '<button>
-              Créez une activité
-            </button>';
-            }
-          ?>
-            </form>
+        
       </div>
       <div class="sale_container">
   
@@ -64,8 +55,6 @@
                 while($row2=mysqli_fetch_array($res2))
                 {
 
-                  /* "Select COUNT(*) from participe where ActID=" $row[0] " NOMBRE DE PARTICIPANTS*/
-                  /* "Select MaxPart from activity where ActID=" $row[0] " NOMBRE MAX*/
                   $sql3="SELECT COUNT(*) FROM participe WHERE ActId=".$row[0];
                   $res3=mysqli_query($conn, $sql3);
                   $sql4="SELECT MaxPart from activity WHERE ActId=".$row[0];
@@ -90,8 +79,10 @@
                           {
                             echo '<form action="participe.php" method="POST">
                             <input type="hidden" id="getAct" name="getAct" value="'.$row[0].'" />
-                            <button>
-                            Participer : '.$row3[0].'/'.$row4[0].' 
+                            <input type="hidden" id="getMax" name="getMax" value="'.$row4[0].'" />
+                            <input type="hidden" id="getPar" name="getPar" value="'.$row3[0].'" />
+                            <button style="padding: 7px 30px;background-color: transparent ;color: #3554d1 ;border-radius: 25px; border-color:#3554d1; border-width:1px;">
+                            '.$row3[0].'/'.$row4[0].' Participants
                             </button>
                           </form>';
                           }
@@ -109,8 +100,29 @@
           } catch (Exception $e) {
               echo $e;
           }
-        ?>
+        ?> 
     </div>
+          <br><br>
+
+    <div class="heading_container">
+        <h2>
+          Vous voulez créer une activité?
+        </h2>
+        <p>
+          Cliquez sur le bouton ci dessous pour accéder au formulaire de création d'activité
+        </p>
+      
+      <?php
+            if(isset($_SESSION['Mail']))
+            {
+              echo '<div class="btn-box">
+              <a href="creAct.php">
+                Créez une activité
+              </a>
+            </div>';
+            }
+          ?>
+      </div>
   </section>
 
   <!-- end sale section -->
