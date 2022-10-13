@@ -8,7 +8,7 @@
   <!-- sale section -->
 
   <section class="sale_section layout_padding-bottom">
-    <div class="container-fluid" style="padding-top:50px">
+    <div class="container-fluid" style="padding-top:80px">
       <div class="heading_container">
         <h2>
           Découvrez les activités du moment.
@@ -16,11 +16,12 @@
         <p>
           Voici les dernières activités proposés par votre entreprise.
         </p>
-      </div>
+        
       <div class="btn-box">
         <a href="house.php">
           Toutes les activités
         </a>
+      </div>
       </div>
       <div class="sale_container">
       

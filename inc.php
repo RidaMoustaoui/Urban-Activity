@@ -108,15 +108,13 @@
           <div class="col-md-4 offset-md-1">
             <div class="detail-box">
               <h1>
-                <span> Fun</span> <br>
+                <span>Fun</span> <br>
                  Times<br>
               </h1>
               <p>
                 Découvrez les activités de votre entreprise.
               </p>
-              <div class="btn-box">
-              <br><br><br><br><br><br><br>
-              </div>
+              
             </div>
           </div>
         </div>
