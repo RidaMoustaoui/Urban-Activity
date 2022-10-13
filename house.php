@@ -85,13 +85,18 @@
                           <h6>
                             '.$row[1].' 
                           </h6>
-                          <p>
-                          <form action="participe.php" method="POST">
-                          <button>
-                          Participer : '.$row3[0].'/'.$row4[0].' 
-                        </button>
-                        </form>
-                            '.$row[2].' - Créé par '.$row2[0]. ' '.$row2[1].'
+                          <p>';
+                          if(isset($_SESSION['Mail']))
+                          {
+                            echo '<form action="participe.php" method="POST">
+                            <input type="hidden" id="getAct" name="getAct" value="'.$row[0].'" />
+                            <button>
+                            Participer : '.$row3[0].'/'.$row4[0].' 
+                            </button>
+                          </form>';
+                          }
+                          
+                            echo ''.$row[2].' - Créé par '.$row2[0]. ' '.$row2[1].'
                           </p>
                         </div>
                       </div>';
