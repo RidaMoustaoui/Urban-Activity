@@ -114,7 +114,9 @@
               <p>
                 Découvrez les activités de votre entreprise.
               </p>
-              
+              <div class="btn-box">
+              <br><br><br><br><br><br><br>
+              </div>
             </div>
           </div>
         </div>
