@@ -12,7 +12,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Teaser</title>
+  <title>Fun Times</title>
 
 
   <!-- bootstrap core css -->
