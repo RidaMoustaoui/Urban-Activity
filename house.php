@@ -81,7 +81,7 @@
                             <input type="hidden" id="getAct" name="getAct" value="'.$row[0].'" />
                             <input type="hidden" id="getMax" name="getMax" value="'.$row4[0].'" />
                             <input type="hidden" id="getPar" name="getPar" value="'.$row3[0].'" />
-                            <button>
+                            <button style="padding: 7px 30px;background-color: transparent ;color: #3554d1 ;border-radius: 25px; border-color:#3554d1; border-width:1px;">
                             '.$row3[0].'/'.$row4[0].' Participants
                             </button>
                           </form>';
