@@ -28,6 +28,7 @@
         <!-- Affichier des activités dynamiquement -->
         <?php
           include('connect.php');
+          $i=1;
 
           try {
             $sql1 = "SELECT COUNT(ActId) FROM activity";
@@ -45,7 +46,7 @@
         }
 
           try {
-              $sql = "SELECT * FROM activity";
+              $sql = "SELECT * FROM activity ORDER BY MaxPart DESC";
               $res = mysqli_query($conn, $sql);
           
               if (!$res) {
@@ -55,13 +56,12 @@
               
               while($row=mysqli_fetch_array($res))
               {
+                if($i<=3)
+                {
                 $sql2= "SELECT Nom, Prenom FROM users WHERE UserID=".$row[7] ;
               $res2 = mysqli_query($conn, $sql2);
                 while($row2=mysqli_fetch_array($res2))
                 {
-
-                  /* "Select COUNT(*) from participe where ActID=" $row[0] " NOMBRE DE PARTICIPANTS*/
-                  /* "Select MaxPart from activity where ActID=" $row[0] " NOMBRE MAX*/
                   $sql3="SELECT COUNT(*) FROM participe WHERE ActId=".$row[0];
                   $res3=mysqli_query($conn, $sql3);
                   $sql4="SELECT MaxPart from activity WHERE ActId=".$row[0];
@@ -82,14 +82,15 @@
                             '.$row[1].' 
                           </h6>
                           <p>
-                            '.$row[2].' - Créé par '.$row2[0]. ' '.$row2[1].'
+                            '.$row[2].' - Créé par '.$row2[0]. ' '.$row2[1].' - '.$row3[0].'/'.$row4[0].' participants
                           </p>
                         </div>
                       </div>';
                       }
                   }
-                
+                  $i++;
                 }
+              }
               }
           
           } catch (Exception $e) {
