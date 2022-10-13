@@ -11,10 +11,10 @@
     <div class="container-fluid" style="padding-top:50px">
       <div class="heading_container">
         <h2>
-          Découvrez les activités du moment.
+          Découvrez les activitées du moment.
         </h2>
         <p>
-          Voici les dernières activités proposés par votre entreprise.
+          Voici les dernières activitées proposés par votre entreprise.
         </p>
       </div>
       <div class="sale_container">
@@ -93,7 +93,7 @@
         </div>
       <div class="btn-box">
         <a href="house.php">
-          Toutes les activités
+          Toutes les activitées
         </a>
       </div>
   </section>
@@ -268,7 +268,7 @@
                 <img src="images/location.png" width="18px" alt="">
               </div>
               <p>
-                Tour Eiffel
+               FunTimes
               </p>
             </div>
             <div>
@@ -284,7 +284,7 @@
                 <img src="images/mail.png" width="18px" alt="">
               </div>
               <p>
-                entreprise@gmail.com
+                FunTimes@gmail.com
               </p>
             </div>
           </div>
@@ -295,7 +295,7 @@
               Information
             </h5>
             <p>
-              Le site permet de se rencontrer , s'amuser entre collégue à travers des activités.
+              Le site permet de se rencontrer , s'amuser entre collégues à travers des activitées.
             </p>
           </div>
         </div>

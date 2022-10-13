@@ -9,7 +9,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Urban Activities</title>
+  <title>FunTimes</title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -89,7 +89,7 @@
             <div id="myNav" class="overlay">
               <div class="overlay-content">
                 <a href="index.php">Accueil</a>
-                <a href="house.php">Activités</a>
+                <a href="house.php">Activitées</a>
                 <a href="jeux.php">Jeux</a>
                 <!--<a href="price.php">JSP QUOI METTRE</a>
                 <a href="contact.php">Contactez Nous</a> -->
