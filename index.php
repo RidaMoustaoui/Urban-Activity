@@ -8,14 +8,20 @@
   <!-- sale section -->
 
   <section class="sale_section layout_padding-bottom">
-    <div class="container-fluid" style="padding-top:50px">
+    <div class="container-fluid" style="padding-top:80px">
       <div class="heading_container">
         <h2>
-          Découvrez les activitées du moment.
+          Découvrez les activités du moment.
         </h2>
         <p>
-          Voici les dernières activitées proposés par votre entreprise.
+          Voici les dernières activités proposés par votre entreprise.
         </p>
+        
+      <div class="btn-box">
+        <a href="house.php">
+          Toutes les activités
+        </a>
+      </div>
       </div>
       <div class="sale_container">
       
@@ -91,11 +97,7 @@
           }
         ?>
         </div>
-      <div class="btn-box">
-        <a href="house.php">
-          Toutes les activitées
-        </a>
-      </div>
+      
   </section>
 
   <section class="client_section" style="padding-bottom:90px">

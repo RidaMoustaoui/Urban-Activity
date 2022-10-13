@@ -5,7 +5,7 @@
     require("inc.php");
   ?>
 
-  <section class="find_section ">
+  <section class="find_section">
         <div class="container">
             <form action="verif_login.php" method="POST">
                 <div class=" form-row">

@@ -108,7 +108,7 @@
           <div class="col-md-4 offset-md-1">
             <div class="detail-box">
               <h1>
-                <span> Fun</span> <br>
+                <span>Fun</span> <br>
                  Times<br>
               </h1>
               <p>
