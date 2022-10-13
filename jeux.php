@@ -44,6 +44,12 @@
     <img src="morpion.png"  width="300px" height="100px" />
   </a>
   </div>
+  <p>&nbsp;</p>
+  <div style="border: double">
+  <a href="tetris.html"> 
+    <img src="tetris.png"  width="300px" height="100px" />
+  </a>
+  </div>
  
 
 </div>
