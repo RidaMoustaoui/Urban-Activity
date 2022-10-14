@@ -8,7 +8,7 @@
     <script type="text/javascript" src="app.js"></script>
   </head>
   <body>
-
+  <h2><a href="index.php">Accueil 🏠</a></h2>
     <header>
       <h1>Mon super jeu</h1>
       <div class="infos">

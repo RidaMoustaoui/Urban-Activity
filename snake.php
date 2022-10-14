@@ -22,6 +22,7 @@
 </head>
 
 <body>
+<h2><a href="index.php">Accueil 🏠</a></h2>
     <div id="snakeWindow">
         <div class="text">
             Press any arrow key

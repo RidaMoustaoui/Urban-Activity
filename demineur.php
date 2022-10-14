@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+	<h2><a href="index.php">Accueil 🏠</a></h2>
 	<h1>Démineur</h1>
 
 	<div id="menu">

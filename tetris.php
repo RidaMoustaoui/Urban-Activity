@@ -17,7 +17,10 @@
         </style>
     </head>
     <body>
-        <div style="margin-bottom: 0.2em">Score : <span id="score"></span></div>
+        <div style="margin-bottom: 0.2em">
+        <a href="index.php">Accueil 🏠</a>
+        | Score : <span id="score"></span>
+        </div>
         <canvas id="tetris" width="240" height="400"></canvas>
         <script src="tetris.js"></script>
         <div> <br>Q et F pour tourner la piece </div>
