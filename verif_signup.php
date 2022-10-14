@@ -21,7 +21,7 @@ try {
     if(mysqli_query($conn, $sql))
     {
         echo '<script type="text/javascript">';
-        echo ' alert("Erreur : L\'utilisateur a été créé.")';  //not showing an alert box.
+        echo ' alert("L\'utilisateur a été créé.")';  //not showing an alert box.
         echo '</script>';
         include('login.php');
     }
