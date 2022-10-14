@@ -32,7 +32,7 @@
 <body>
   <div class="hero_area">
     <!-- header section strats -->
-    <header class="header_section" style="background-color:#3554d1">
+    <header class="header_section" style="background-color:#3554d1; overflow: visible;">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container">
           <a class="navbar-brand" href="index.php">
