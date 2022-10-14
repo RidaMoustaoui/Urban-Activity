@@ -7,7 +7,9 @@ $prenom = str_replace("'", "\'", $_POST['Prenom']);
 
 if($mail=="" or $mdp=="" or $nom=="" or $prenom=="")
 {
-    echo "Erreur : Veuillez saisir un mail, un mot de passe, un nom et un prenom.";
+    echo '<script type="text/javascript">';
+    echo ' alert("Erreur : Veuillez saisir un mail, un mot de passe, un nom et un prenom.")';  //not showing an alert box.
+    echo '</script>';
     include('signup.php');
 }
 else
@@ -18,12 +20,16 @@ try {
     $sql = "INSERT INTO users (Mail, Mdp, Nom, Prenom) VALUES ('".$mail."', '".$mdp."', '".$nom."', '".$prenom."');";
     if(mysqli_query($conn, $sql))
     {
-        echo "L'utilisateur a été créé.";
+        echo '<script type="text/javascript">';
+        echo ' alert("Erreur : L\'utilisateur a été créé.")';  //not showing an alert box.
+        echo '</script>';
         include('login.php');
     }
     else
     {
-        echo "Erreur : Problème dans la requête.";
+        echo '<script type="text/javascript">';
+        echo ' alert("Erreur : Problème dans la requête.")';  //not showing an alert box.
+        echo '</script>';
         include('signup.php');
     }
     

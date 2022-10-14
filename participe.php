@@ -10,18 +10,26 @@ try {
         if ($_POST['getPar'] < $_POST['getMax']) {
             $sql = "INSERT INTO participe (UserID, ActId) VALUES ('" . $_SESSION['UserID'] . "', '" . $_POST['getAct'] . "');";
             if (mysqli_query($conn, $sql)) {
-                echo "Vous avez participé à l'activité.";
+                echo '<script type="text/javascript">';
+        echo ' alert("Vous avez participé à l\'activité.")';  //not showing an alert box.
+        echo '</script>';
                 include('index.php');
             } else {
-                echo "Erreur : Vous participez déjà à cette activité.";
+                echo '<script type="text/javascript">';
+        echo ' alert("Erreur : Vous participez déjà à cette activité.")';  //not showing an alert box.
+        echo '</script>';
                 include('index.php');
             }
         } else {
-            echo "Erreur : Nombre max de participants atteint.";
+            echo '<script type="text/javascript">';
+        echo ' alert("Erreur : Nombre max de participants atteint.")';  //not showing an alert box.
+        echo '</script>';
             include('index.php');
         }
     } else {
-        echo "Erreur : Veuillez réessayer";
+        echo '<script type="text/javascript">';
+        echo ' alert("Erreur : Veuillez réessayer.")';  //not showing an alert box.
+        echo '</script>';
         include('index.php');
     }
 } catch (Exception $e) {

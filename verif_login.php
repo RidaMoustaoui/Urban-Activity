@@ -16,7 +16,9 @@ try {
 
     $row = mysqli_fetch_array($res, MYSQLI_NUM);
     if ($mail == "" or $mdp == "") {
-        echo "Echec de connexion.";
+        echo '<script type="text/javascript">';
+        echo ' alert("Erreur : Echec de connexion.")';  //not showing an alert box.
+        echo '</script>';
         include("index.php");
         exit;
     } else {
@@ -27,9 +29,14 @@ try {
             $_SESSION['Prenom'] = $row[3];
             $_SESSION['UserID'] = $row[4];
             $_SESSION["time"] = time();
+            echo '<script type="text/javascript">';
+            echo ' alert("Bienvenue")';  //not showing an alert box.
+            echo '</script>';
             include("index.php");
         } else {
-            echo "Echec de connexion.";
+            echo '<script type="text/javascript">';
+        echo ' alert("Erreur : Echec de connexion.")';  //not showing an alert box.
+        echo '</script>';
             include("index.php");
             exit;
         }

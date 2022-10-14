@@ -12,7 +12,9 @@ $maxpart = str_replace("'", "\'", $_POST['MaxPart']);
 $img = str_replace("'", "\'", $_POST['Img']);
 
 if ($titre == "" or $dateact == "" or $maxpart == "") {
-    echo "Veuillez saisir un titre, une date de début, et un nombre max de participants.";
+    echo '<script type="text/javascript">';
+        echo ' alert("Erreur : Veuillez saisir un titre, une date de début et un nombre max de participants.")';  //not showing an alert box.
+        echo '</script>';
     include('house.php');
 } else {
     include('connect.php');
@@ -37,15 +39,21 @@ if ($titre == "" or $dateact == "" or $maxpart == "") {
                 }
                 else
                 {
-                    echo "Erreur";
+                    echo '<script type="text/javascript">';
+        echo ' alert("Erreur : Problème dans la requête.")';  //not showing an alert box.
+        echo '</script>';
                     include("house.php");
                 }
             }
 
-            echo "L'activité a été créé";
+            echo '<script type="text/javascript">';
+        echo ' alert("L\activité a été créée.")';  //not showing an alert box.
+        echo '</script>';
             include('house.php');
         } else {
-            echo "Erreur : Problème rencontré pendant la création de l'activité.";
+            echo '<script type="text/javascript">';
+        echo ' alert("Erreur : Problème rencontré pendant la création de l\'activité.")';  //not showing an alert box.
+        echo '</script>';
             include('house.php');
         }
     } catch (Exception $e) {
