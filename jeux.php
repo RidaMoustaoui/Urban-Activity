@@ -22,31 +22,31 @@
         <link href="css/style.css" rel="stylesheet" />
         <div class="jeu">
           <div style="border: double">
-  <a href="demineur.html"> 
+  <a href="demineur.php"> 
     <img src="logograph.png" width="300px" height="100px" />
   </a>
   </div>
   <p>&nbsp;</p>
   <div style="border: double">
-  <a href="pig.html"> 
+  <a href="pig.php"> 
     <img src="des.jpg"  width="300px" height="100px" />
   </a>
   </div>
   <p>&nbsp;</p>
   <div style="border: double">
-  <a href="snake.html">
+  <a href="snake.php">
      <img src="snake.jpg"  width="300px" height="100px" />
   </a>
   </div>
   <p>&nbsp;</p>
   <div style="border: double">
-  <a href="morpion.html"> 
+  <a href="morpion.php"> 
     <img src="morpion.png"  width="300px" height="100px" />
   </a>
   </div>
   <p>&nbsp;</p>
   <div style="border: double">
-  <a href="tetris.html"> 
+  <a href="tetris.php"> 
     <img src="tetris.png"  width="300px" height="100px" />
   </a>
   </div>
