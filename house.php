@@ -14,7 +14,7 @@
           Activités
         </h2>
         <p>
-          Voici les activités proposés par vos collègues et votre entreprise.
+          Voici les activités proposées par vos collègues et votre entreprise.
         </p>
         
       </div>
@@ -106,20 +106,26 @@
 
     <div class="heading_container">
         <h2>
-          Vous voulez créer une activité?
+        Vous voulez créer une activité ?
         </h2>
-        <p>
-          Cliquez sur le bouton ci dessous pour accéder au formulaire de création d'activité
-        </p>
+        
       
       <?php
             if(isset($_SESSION['Mail']))
             {
+              echo '<p>
+              Cliquez sur le bouton ci-dessous pour accéder au formulaire de création d\'activité.
+              </p>';
               echo '<div class="btn-box">
               <a href="creAct.php">
                 Créez une activité
               </a>
             </div>';
+            }else
+            {
+              echo '<p>
+              Connectez-vous pour accéder au formulaire de création d\'activité.
+              </p>';
             }
           ?>
       </div>

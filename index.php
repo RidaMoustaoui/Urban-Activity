@@ -14,7 +14,7 @@
           Découvrez les activités du moment.
         </h2>
         <p>
-          Voici les dernières activités proposés par votre entreprise.
+          Voici les dernières activités proposées par votre entreprise.
         </p>
         
       <div class="btn-box">
