@@ -47,7 +47,7 @@ if ($titre == "" or $dateact == "" or $maxpart == "") {
             }
 
             echo '<script type="text/javascript">';
-        echo ' alert("L\activité a été créée.")';  //not showing an alert box.
+        echo ' alert("L\'activité a été créée.")';  //not showing an alert box.
         echo '</script>';
             include('house.php');
         } else {
